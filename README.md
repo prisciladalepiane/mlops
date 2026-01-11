@@ -6,8 +6,12 @@ Este projeto implementa uma stack de MLOps para previsão de demanda baseada em 
 
 📁 [01-Otimizacao-Hiperparametros](01-Otimizacao-Hiperparametros)
 
-# 2 - Deploy de App para Análise de Ações em Tempo Real com Agentes de IA, Groq, DeepSeek e AWS 
+## 2 - Deploy de App para Análise de Ações em Tempo Real com Agentes de IA, Groq, DeepSeek e AWS 
 
 Projeto de deploy de um aplicativo web para análise de mercado financeiro em tempo real, desenvolvido com `Streamlit`, que integra dados de mercado via Yahoo Finance, visualizações interativas com `Plotly` e um sistema de a**gentes de IA** colaborativos utilizando modelos **DeepSeek** e **LLaMA** executados via Groq. A aplicação permite ao usuário consultar ações da Nasdaq, visualizar séries históricas, gráficos de candlestick, volume e médias móveis, além de receber análises automatizadas, recomendações de analistas e notícias recentes obtidas por agentes especializados em finanças e busca na web. A solução é projetada para apoio a estratégias de day trade, com foco em desempenho, escalabilidade e futura operacionalização em infraestrutura AWS, combinando analytics, IA generativa e engenharia de deploy em um único produto.
 
 📁 [02-Agente-IA-Financeiro](02-Agente-IA-Financeiro)
+
+## 2 - Sistema LLM RAG
+
+Projeto de MLOps de ponta a ponta para um sistema baseado em **LLM com arquitetura RAG**, que cobre todas as etapas desde a modelagem e ingestão de dados até a orquestração e execução automatizada do pipeline. A solução implementa a criação de um banco de dados relacional em PostgreSQL, com schemas e tabelas normalizadas para clientes, produtos e vendas, além de um pipeline de carga de dados via Python, usando `Pandas` e `SQLAlchemy`. A partir desses dados estruturados, são realizadas consultas analíticas agregadas, cujos resultados alimentam um modelo de linguagem executado localmente via `Ollama`, responsável por gerar insights textuais automatizados sobre padrões de vendas. Todo o fluxo é containerizado com Docker e executado de forma orquestrada por scripts Python, refletindo práticas de **engenharia de dados**, **LLMOps** e **MLOps**, com foco em reprodutibilidade, automação, governança e preparação para deploy em ambientes produtivos.
