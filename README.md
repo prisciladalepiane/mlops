@@ -15,3 +15,39 @@ Projeto de deploy de um aplicativo web para análise de mercado financeiro em te
 ## 2 - Sistema LLM RAG
 
 Projeto de MLOps de ponta a ponta para um sistema baseado em **LLM com arquitetura RAG**, que cobre todas as etapas desde a modelagem e ingestão de dados até a orquestração e execução automatizada do pipeline. A solução implementa a criação de um banco de dados relacional em PostgreSQL, com schemas e tabelas normalizadas para clientes, produtos e vendas, além de um pipeline de carga de dados via Python, usando `Pandas` e `SQLAlchemy`. A partir desses dados estruturados, são realizadas consultas analíticas agregadas, cujos resultados alimentam um modelo de linguagem executado localmente via `Ollama`, responsável por gerar insights textuais automatizados sobre padrões de vendas. Todo o fluxo é containerizado com Docker e executado de forma orquestrada por scripts Python, refletindo práticas de **engenharia de dados**, **LLMOps** e **MLOps**, com foco em reprodutibilidade, automação, governança e preparação para deploy em ambientes produtivos.
+
+-----------------------------------------------------------------------------
+
+
+# 🔗 Outros Projetos
+
+Lista de repositórios externos.
+
+## ⚙️ Machine Learning
+- [machine-learning](https://github.com/prisciladalepiane/machine-learning): Estudos e projetos com redes neurais, fundamentos de arquiteturas profundas, treinamento, avaliação e experimentos aplicados.
+
+## 🧠 Deep Learning
+- [deep-learning](https://github.com/prisciladalepiane/deep-learning): Estudos e projetos com redes neurais, fundamentos de arquiteturas profundas, treinamento, avaliação e experimentos aplicados.
+
+## 🔬 Ciência de Dados com Python
+
+- [data_sci_py](https://github.com/prisciladalepiane/data_sci_py): Scripts e notebooks de estudos com Python, Pandas, Matplotlib, Scikit-Learn, etc.
+
+## 🧪 Shiny e TCT
+
+- [app_shiny_tct](https://github.com/prisciladalepiane/app_shiny_tct): Aplicativo Shiny para visualização de resultados em Teoria Clássica dos Testes (TCT) usando dados educacionais.
+
+## 🗃️ Banco de Dados
+
+- [banco_de_dados](https://github.com/prisciladalepiane/banco_de_dados): Modelagem e consultas SQL com foco em bancos relacionais. Inclui scripts de criação de tabelas e casos de uso.
+
+## 📚 Artigo Teoria de Resposta ao Item
+
+- [artigo-tri-latex](https://github.com/prisciladalepiane/artigo-tri-latex): Repositório da monografia sobre TRI, com código LaTeX e referências.
+
+---
+
+**Priscila Gonçalves Dalepiane**
+Estatística | Engenharia de Software | Pós em Machine Learning e MLOps  
+
+[LinkedIn](https://www.linkedin.com/in/priscila-gon%C3%A7alves-dalepiane-947b65b2/) | [Rpubs](https://rpubs.com/prisciladalepiane) | [GitHub](https://github.com/prisciladalepiane)
