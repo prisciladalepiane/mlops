@@ -9,7 +9,7 @@ def executa_script_sql(filename):
     
     # Conecta ao banco de dados PostgreSQL com as credenciais fornecidas
     conn = psycopg2.connect(
-        dbname="dsadb",
+        dbname="pridb",
         user="priscila",
         password="pri1010",
         host="localhost",
