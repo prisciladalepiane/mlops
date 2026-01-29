@@ -13,8 +13,10 @@ dvc init
 dvc add data/raw_dataset.csv
 git add data/.gitignore data/raw_dataset.csv.dvc
 git commit -m "Add raw dataset"
-Delta Lake: Delta Lake, que roda em cima do Apache Spark, permite o versionamento de dados em grandes volumes, oferecendo ACID transactions e time travel para consultar versões anteriores dos dados.
 ```
+
+Delta Lake: Delta Lake, que roda em cima do Apache Spark, permite o versionamento de dados em grandes volumes, oferecendo ACID transactions e time travel para consultar versões anteriores dos dados.
+
 
 ## 2. Versionamento de Modelos
 **MLflow**: MLflow é uma plataforma que oferece ferramentas para rastreamento e versionamento de experimentos, gerando um registro completo dos modelos treinados.
@@ -32,6 +34,7 @@ with mlflow.start_run():
 **TensorFlow Model Registry:** Para projetos que usam TensorFlow, o TensorFlow Serving pode ser utilizado para versionar e servir modelos.
 
 Comandos Básicos:
+
 ```python
 import tensorflow as tf
 tf.saved_model.save(model, "path/to/export_dir")
@@ -108,3 +111,17 @@ docker run ml_model:latest
 ```
 ​
 > Implementar uma estratégia de versionamento de artefatos em MLOps garante que todas as mudanças nos dados, modelos, códigos e pipelines sejam rastreadas de maneira eficaz, facilitando a reprodutibilidade e a manutenção dos projetos de Machine Learning.
+
+## Controle de Versão e Repositório
+
+Dentro de uma infraestrutura de features para MLOps, o controle de versão e o repositório de features visam garantir a reprodutibilidade e a rastreabilidade dos modelos.
+
+O controle de versão é aplicado tanto aos dados de entrada quanto às features extraídas. Isso permite que qualquer transformação de dados, ajustes ou alterações nas features sejam documentados e versionados de forma adequada, garantindo que versões anteriores possam ser recuperadas para fins de auditoria ou reavaliação de modelos.
+
+O repositório de features, geralmente chamado de Feature Store, atua como um sistema centralizado onde as features são armazenadas e compartilhadas entre equipes.
+
+Cada feature é versionada com base em metadados, como o nome da feature, o tempo de criação e o histórico de transformações. Isso facilita o reuso de features em diferentes modelos e projetos, reduzindo o trabalho duplicado e assegurando consistência entre os experimentos.
+
+O controle de versão também se estende ao pipeline de transformação de features. Ferramentas como **DVC (Data Version Control)** ou Git-LFS são comumente usadas para gerenciar os artefatos gerados durante o pré-processamento, enquanto frameworks como Feast possibilitam o versionamento e a gestão centralizada de features em ambientes de produção.
+
+Com essas práticas, o sistema MLOps pode garantir uma integração fluida entre a criação de features, o monitoramento de mudanças e a rastreabilidade, essencial para a governança e manutenção de modelos em ambientes de produção.
