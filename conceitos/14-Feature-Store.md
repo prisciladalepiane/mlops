@@ -84,3 +84,59 @@ Essa camada permite a integração com sistemas de treinamento de modelos, pipel
 A feature store deve se integrar de forma harmoniosa com pipelines de Machine Learning, permitindo que os dados das features fluam do armazenamento até os modelos de treinamento e inferência. Isso garante a consistência entre o que é usado para treinar os modelos e o que é servido em tempo real para inferências.
 
 Essa arquitetura facilita o processo de criação, manutenção e uso das features de forma eficiente e escalável, especialmente em ambientes de Machine Learning onde há necessidade de alto desempenho e consistência
+
+
+# Padrões de Criação de Feature Stores
+
+Os padrões de criação de Feature Stores são diretrizes e práticas recomendadas para desenvolver e gerenciar repositórios centralizados de features que são reutilizáveis em vários modelos de machine learning.
+
+Esses padrões garantem a consistência, escalabilidade e eficiência do ciclo de vida de features em MLOps.
+
+## Principais Padrões:
+1.**Padronização e Consistência**: Um dos principais padrões é a padronização das features. Isso significa que todas as features devem ser armazenadas em um formato consistente, com nomes padronizados, descrições claras e metadados bem definidos. A padronização garante que as equipes possam reutilizar as mesmas features em diferentes modelos, facilitando a manutenção e promovendo a consistência entre ambientes de desenvolvimento e produção.
+
+
+2. **Versionamento de Features**: Assim como os dados e os modelos, as features precisam ser versionadas. Cada modificação ou ajuste de uma feature deve ser registrado, permitindo rastrear qual versão de uma feature foi usada em determinado modelo ou experimento. Esse padrão é essencial para garantir a reprodutibilidade e para poder auditar os resultados obtidos com modelos que utilizaram versões específicas de features.
+
+3. **Atualização em Tempo Real e em Lote**: Outro padrão importante é a capacidade de atualizar as features tanto em tempo real quanto em modo batch (lote). Para modelos que requerem processamento de dados em tempo real, o Feature Store deve ser capaz de ingerir e servir features em tempo real (como em sistemas de recomendação ou detecção de fraudes). Ao mesmo tempo, ele deve suportar atualizações em lote para tarefas como re-treinamento periódico de modelos com grandes volumes de dados históricos.
+
+4. **Monitoramento e Qualidade das Features**: As Feature Stores devem incluir mecanismos de monitoramento contínuo para avaliar a qualidade das features. Isso inclui rastrear o data drift (mudança nos dados), verificar a integridade dos dados e gerar alertas quando há degradação nas features utilizadas pelos modelos em produção. O monitoramento garante que os modelos baseados nessas features mantenham a performance desejada, e os problemas possam ser rapidamente identificados e corrigidos.
+
+> Esses padrões, quando implementados, garantem que o gerenciamento de features em MLOps seja eficiente, seguro e alinhado com as melhores práticas do ciclo de vida de Machine Learning em produção.
+
+## Estratégias de Escalabilidade Para Features Stores
+
+Para garantir que uma Feature Store suporte volumes crescentes de dados e múltiplos modelos de Machine Learning em produção, várias estratégias de escalabilidade podem ser implementadas.
+
+Essas estratégias garantem que a Feature Store continue eficiente à medida que os dados aumentam e as demandas de processamento se tornam mais intensas. 
+
+### 1. Particionamento de Dados (Sharding):
+
+O particionamento é uma estratégia em que os dados de features são divididos em partes menores, ou shards, com base em critérios como tempo ou tipos de dados. Isso permite que consultas e atualizações sejam distribuídas entre diferentes servidores, reduzindo a carga de trabalho em cada um.
+
+O particionamento por chave de entidade (como IDs de usuários ou clientes) também pode ser usado para otimizar o acesso e garantir que a Feature Store seja escalável horizontalmente.
+
+### 2. Cache de Features em Tempo Real:
+
+Para modelos que requerem previsões em tempo real, o uso de caching é uma estratégia eficiente. Features frequentemente acessadas podem ser mantidas em cache na memória (RAM) para permitir uma rápida recuperação, evitando a latência associada a buscas em disco.
+
+Tecnologias como Redis ou Memcached podem ser usadas para implementar esse tipo de cache, o que acelera o tempo de resposta das features para modelos que precisam de dados imediatos.
+
+### 3. Processamento Distribuído:
+
+Outra estratégia é utilizar frameworks de processamento distribuído, como Apache Spark ou Flink, para calcular e atualizar features em larga escala. Isso permite processar grandes volumes de dados em paralelo, dividindo a carga entre diferentes nós de computação.
+
+Além disso, a integração com arquiteturas de stream processing, como Kafka ou Kinesis, garante que as features possam ser atualizadas em tempo real com alta performance e baixa latência.
+
+### 4. Armazenamento Híbrido (Batch e Real-Time):
+
+Uma Feature Store escalável geralmente implementa um sistema de armazenamento híbrido, onde features em tempo real e em batch coexistem. O armazenamento em batch é otimizado para grandes volumes de dados e processos periódicos, enquanto o armazenamento em tempo real é ajustado para latência baixa e acesso rápido.
+
+Usar tecnologias de data lakes (como Amazon S3 ou Google Cloud Storage) em combinação com bancos de dados NoSQL (como DynamoDB ou BigTable) permite lidar com diferentes tipos de cargas de trabalho e dados de forma eficiente.
+
+> Essas estratégias permitem que as Feature Stores escalem conforme necessário, suportando ambientes de Machine Learning cada vez mais exigentes, com alto volume de dados e previsões em tempo real.
+
+REFERÊNCIAS
+
+What Is a Feature Store in Machine Learning?
+https://www.snowflake.com/guides/what-feature-store-machine-learning/Data 
