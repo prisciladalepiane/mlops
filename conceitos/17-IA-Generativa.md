@@ -57,3 +57,7 @@ LLMOps, ou Operações de Grandes Modelos de Linguagem, refere-se ao conjunto de
 
 LLMOps é essencial para operacionalizar grandes modelos de linguagem de forma eficaz, garantindo que eles atendam aos requisitos de desempenho, escalabilidade e confiabilidade em ambientes de produção.
 
+
+### Configurando o Acesso ao LLM Open-Source
+
+A plataforma Hugging Face é uma comunidade e infraestrutura para desenvolver, compartilhar e colaborar em projetos de Inteligência Artificial, com foco principal em modelos de Processamento de Linguagem Natural (PLN). A Hugging Face oferece uma ampla biblioteca de modelos e datasets pré-treinados, além de ferramentas que facilitam o desenvolvimento de soluções de IA, incluindo chatbots, análise de sentimentos, tradução de idiomas, geração de texto e muito mais.
