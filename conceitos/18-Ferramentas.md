@@ -34,3 +34,22 @@ O Elasticsearch é comumente utilizado em diversos cenários, incluindo:
 
 No núcleo do Elasticsearch, os dados são indexados em estruturas chamadas de "índices", que são divididos em "shards" para permitir que o sistema distribua o armazenamento e o processamento em diferentes nós. Isso facilita a escalabilidade e garante que o sistema possa lidar com grandes volumes de dados sem perda de desempenho.
 
+# Apache Spark
+
+O Apache Spark é uma plataforma de computação distribuída de código aberto projetada para processamento de grandes volumes de dados de forma rápida e eficiente. Ele suporta várias linguagens de programação, como Java, Scala, Python e R, e fornece bibliotecas integradas para processamento de dados estruturados (Spark SQL), aprendizado de máquina (MLlib), streaming de dados em tempo real (Spark Streaming) e análise de grafos (GraphX).
+
+O Spark é conhecido por seu modelo de execução em memória, que permite realizar operações em grandes datasets de maneira mais rápida em comparação com sistemas baseados em disco, como o Hadoop MapReduce.
+
+## PySpark
+
+O PySpark é a API do Apache Spark para Python, permitindo usar a funcionalidade poderosa do Spark diretamente em scripts Python. Ele é amplamente utilizado para:
+
+- **Manipulação de Dados**: Processar e transformar grandes volumes de dados usando DataFrames e RDDs (Resilient Distributed Datasets).
+
+- **Aprendizado de Máquina**: Construir e treinar modelos distribuídos usando MLlib.
+
+- **Consultas SQL**: Executar consultas estruturadas sobre datasets.
+
+- **Streaming**: Processar fluxos de dados em tempo real.
+
+O PySpark é especialmente útil porque combina a simplicidade e legibilidade da Linguagem Python com a escalabilidade do Spark, sendo uma escolha popular para projetos de Machine Learning que requerem a execução em ambiente distribuído, local ou na nuvem.
