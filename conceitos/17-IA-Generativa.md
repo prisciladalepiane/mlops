@@ -61,3 +61,28 @@ LLMOps é essencial para operacionalizar grandes modelos de linguagem de forma e
 ### Configurando o Acesso ao LLM Open-Source
 
 A plataforma Hugging Face é uma comunidade e infraestrutura para desenvolver, compartilhar e colaborar em projetos de Inteligência Artificial, com foco principal em modelos de Processamento de Linguagem Natural (PLN). A Hugging Face oferece uma ampla biblioteca de modelos e datasets pré-treinados, além de ferramentas que facilitam o desenvolvimento de soluções de IA, incluindo chatbots, análise de sentimentos, tradução de idiomas, geração de texto e muito mais.
+
+## Métricas de Performance de Modelos Generativos
+
+Há diversas métricas que podem ser usadas para avaliar a performance de modelos generativos. Aqui usaremos duas métricas que medem a performance do modelo quando usado dentro de uma aplicação web:
+
+A **taxa de acerto (hit rate)** mede a proporção de respostas relevantes presentes em uma lista de resultados gerados pelo modelo de linguagem. Nesse contexto, uma "linha" representa um conjunto de resultados para uma consulta, e "relevância" indica se algum resultado na linha é útil ou relevante (marcado como "True"). A função contabiliza quantas vezes pelo menos uma resposta relevante está presente entre os resultados de cada consulta e, em seguida, divide esse total pelo número total de consultas avaliadas. A taxa de acerto resulta em um valor entre 0 e 1, indicando a porcentagem de consultas para as quais o modelo forneceu uma resposta relevante.
+
+A **média recíproca dos rankings (MRR - Mean Reciprocal Rank)** é uma métrica que considera a posição da primeira resposta relevante na lista de resultados de uma consulta. Para cada consulta, a métrica avalia em que posição o primeiro resultado relevante aparece e calcula o valor recíproco dessa posição (por exemplo, se a resposta relevante está na posição 1, o valor recíproco é 1; se está na posição 3, o recíproco é 1/3). A média dos valores recíprocos para todas as consultas é então calculada, dando uma medida de quão rapidamente o modelo fornece uma resposta relevante. Um MRR mais alto indica que o modelo é mais eficiente em colocar respostas úteis nas primeiras posições da lista de resultados.
+
+## Grafana
+
+O Grafana é uma plataforma de visualização de dados de código aberto, amplamente utilizada para monitoramento e análise de métricas em tempo real. Ele permite criar dashboards interativos, onde é possível visualizar dados de diversas fontes em uma interface unificada, facilitando a interpretação e o acompanhamento de métricas de sistemas, infraestrutura e aplicações. O Grafana é compatível com várias fontes de dados, como Prometheus, InfluxDB, Elasticsearch, MySQL, PostgreSQL, entre outras, o que torna a ferramenta altamente versátil e adaptável a diferentes ambientes.
+
+
+O Grafana é ideal em cenários que exigem:
+
+- Monitoramento contínuo: É amplamente utilizado para monitorar sistemas e infraestrutura, oferecendo uma visão consolidada de métricas como uso de CPU, memória, taxa de erro e latência de aplicações.
+
+- Alertas em tempo real: Permite configurar alertas com base em condições específicas, avisando os usuários quando um limite crítico é atingido, o que facilita ações proativas para a resolução de problemas.
+
+- Visualização e análise de séries temporais: Ideal para dados que variam ao longo do tempo, como métricas de desempenho e logs, sendo possível identificar tendências, picos e padrões anômalos.
+
+- Correlação de métricas: Oferece uma interface que facilita a correlação entre diferentes métricas de várias fontes, ajudando na identificação de causas raízes em incidentes complexos.
+
+O Grafana é muito popular em ambientes DevOps e SRE (Site Reliability Engineering) devido à sua capacidade de monitoramento centralizado e à flexibilidade na criação de dashboards. Ele permite personalizações avançadas, incluindo gráficos interativos, painéis específicos para cada tipo de métrica e integração com ferramentas de notificação, como Slack e e-mail, para envio automático de alertas.
