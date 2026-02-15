@@ -1,26 +1,23 @@
+# Optuna
+
 Optuna é uma biblioteca de otimização de hiperparâmetros muito poderosa, moderna e automatizada, usada para encontrar automaticamente as melhores combinações de parâmetros em modelos de Machine Learning.
 
 Ela funciona como um "cérebro" que testa, avalia e melhora hiperparâmetros sem você ter que fazer isso manualmente.
 
 Em outras palavras
 
-Optuna é um otimizador automático que:
+Optuna é um **otimizador automático** que:
 
-escolhe combinações de hiperparâmetros
-
-treina o modelo
-
-mede a performance
-
-aprende com os resultados anteriores
-
-gera novas combinações melhores
-
-repete tudo para encontrar a configuração ideal
+- escolhe combinações de hiperparâmetros
+- treina o modelo
+- mede a performance
+- aprende com os resultados anteriores
+- gera novas combinações melhores
+- repete tudo para encontrar a configuração ideal
 
 É como ter um assistente inteligente afinando um modelo para você.
 
-## Por que Optuna é tão conhecido?
+### Por que Optuna é tão conhecido?
 1. **Ele usa Search inteligente (não só grid/random)**
 
 Optuna utiliza algoritmos de otimização bayesiana e tree-structured parzen estimators (TPE).
@@ -56,7 +53,7 @@ Economiza muito tempo.
 - FastAI
 - Modelos customizados
 
-## Como optuna funciona
+### Como optuna funciona
 
 Imagine que você quer achar os melhores valores de:
 

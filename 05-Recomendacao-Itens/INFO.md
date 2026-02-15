@@ -16,9 +16,11 @@ Os dados de exemplo usado no projeto deste capítulo fornecem informações esse
 
 ## Algoritmo ALS 
 
+https://spark.apache.org/docs/latest/api/python/reference/api/pyspark.ml.recommendation.ALS.html
+
 O algoritmo ALS (Alternating Least Squares) no MLLib é utilizado para resolver problemas de recomendação, como sistemas de recomendação de filmes, músicas ou produtos. Ele é especialmente eficaz em cenários com dados esparsos, onde muitas interações entre usuários e itens não estão registradas.
 
-O ALS funciona modelando as preferências dos usuários e as características dos itens em um espaço de fatores latentes. oA ideia principal é decompor a matriz de interações (como avaliações de usuários para itens) em duas matrizes menores: uma representando os usuários e outra os itens. Essas matrizes menores capturam os padrões latentes nas interações, permitindo prever valores desconhecidos.
+O ALS funciona modelando as preferências dos usuários e as características dos itens em um espaço de fatores latentes. A ideia principal é decompor a matriz de interações (como avaliações de usuários para itens) em duas matrizes menores: uma representando os usuários e outra os itens. Essas matrizes menores capturam os padrões latentes nas interações, permitindo prever valores desconhecidos.
 
 A abordagem alterna entre otimizar as representações dos usuários e dos itens. Primeiro, mantém-se fixas as características dos itens para atualizar as representações dos usuários, minimizando o erro quadrático entre as avaliações conhecidas e as predições. Em seguida, as representações dos usuários são fixadas para ajustar as características dos itens. Esse processo continua de forma iterativa até que o modelo consiga convergir ou atinja o número máximo de iterações.
 
