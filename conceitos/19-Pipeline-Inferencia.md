@@ -153,3 +153,27 @@ Ferramentas como Git (para versões) e sistemas como YAML ou ferramentas de infr
 Auditoria e conformidade regulatória em pipelines de Machine Learning garantem que os processos sigam normas legais e éticas, assegurando transparência, rastreabilidade e segurança dos dados. Isso envolve registro detalhado de decisões, versionamento de modelos e dados, monitoramento de uso e validação contínua para evitar vieses.
 
 Ferramentas de auditoria automática e frameworks como GDPR ou LGPD ajudam a alinhar os pipelines às exigências regulatórias.
+
+## Vantagens e Desvantagens dos Pipelines Automatizados em Machine Learning
+
+Pipelines automatizados em Machine Learning oferecem facilidades significativas ao longo de todo o ciclo de desenvolvimento, visto que reduzem a necessidade de intervenção manual em cada etapa do processo.
+
+Isso possibilita ganhos de tempo, melhoria na escalabilidade e diminuição da ocorrência de erros humanos, tornando os fluxos de trabalho mais consistentes. Além disso, ao padronizar tarefas como a engenharia de atributos, seleção de modelos e ajuste de hiperparâmetros, obtém-se uma maior reprodutibilidade dos experimentos e uma manutenção mais simples, já que as etapas se tornam mais transparentes e documentadas.
+
+Contudo, essas vantagens vêm acompanhadas de certas limitações. O uso de pipelines automatizados pode levar a uma dependência excessiva de ferramentas e frameworks, reduzindo a flexibilidade de ajustes manuais finos, o que pode afetar a obtenção de modelos mais complexos ou adaptados a contextos muito específicos.
+
+Também existe o risco de perda de compreensão sobre as decisões algorítmicas tomadas, já que a automação tende a obscurecer as escolhas inerentes ao processo, exigindo do especialista um maior esforço para interpretar resultados. Ademais, criar e manter pipelines automatizados robustos demanda conhecimento e investimento inicial, podendo representar custos operacionais e computacionais altos, sobretudo em cenários de grande volume de dados.
+
+## Componentes Chave de um Pipeline de Treinamento
+
+Um pipeline de treinamento inclui basicamente um fluxo contínuo de atividades que garantem a conversão de dados brutos em modelos prontos para uso.
+
+Esse fluxo geralmente começa pela coleta e preparação dos dados, etapa onde se garante a limpeza, padronização e integração adequada das diferentes fontes.
+
+Em seguida ocorre a divisão dos dados em conjuntos de treino, validação e teste, assegurando uma avaliação justa do desempenho do modelo.
+
+Outro componente importante é a engenharia de atributos, que concentra esforços em criar representações dos dados mais significativas e úteis ao modelo.
+
+Além disso, há a seleção e ajuste de modelos, etapa que envolve a escolha da melhor arquitetura e a otimização de hiperparâmetros.
+
+Por fim, integra-se um processo de validação e avaliação contínua do desempenho, que garante a qualidade do modelo antes de sua implantação, e a automação de todo esse fluxo, possibilitando reprodutibilidade, escalabilidade e manutenção mais simples.
