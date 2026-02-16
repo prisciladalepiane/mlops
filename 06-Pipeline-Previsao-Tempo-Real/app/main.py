@@ -1,7 +1,7 @@
 # Imports
 import pandas as pd
 from fastapi import FastAPI
-from app.modelo import InputData
+from app.validadados import InputData
 from app.utils import carrega_modelo_e_metadados
 
 # Cria uma instância da aplicação FastAPI
