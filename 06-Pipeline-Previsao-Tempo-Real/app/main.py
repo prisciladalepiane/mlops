@@ -7,6 +7,13 @@ from app.utils import carrega_modelo_e_metadados
 # Cria uma instância da aplicação FastAPI
 app = FastAPI()
 
+# Define uma rota de verificação de saúde do serviço
+@app.get("/health")
+def health_check():
+
+    # Retorna o status do serviço
+    return {"status": "ok"}
+
 # Define uma rota para previsão
 @app.post("/predict")
 def predict(input_data: InputData):
