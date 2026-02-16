@@ -37,3 +37,34 @@ def salva_modelo_e_metadados(model, X_train, y_train, model_dir = "modelo"):
         json.dump(metadata, f)
     
     return current_version
+
+# Função para carregar o modelo e seus metadados
+def carrega_modelo_e_metadados(model_dir = "modelo"):
+
+    # Lista todos os arquivos de modelo no diretório especificado
+    models = [f for f in os.listdir(model_dir) if f.startswith("modelo_v") and f.endswith(".pkl")]
+    
+    # Retorna None caso não existam modelos no diretório
+    if not models:
+        return None, None
+    
+    # Extrai as versões dos modelos disponíveis
+    versions = [int(m.split("_v")[-1].split(".pkl")[0]) for m in models]
+    
+    # Determina a versão mais recente
+    latest = max(versions)
+    
+    # Define os caminhos para os arquivos do modelo e dos metadados mais recentes
+    model_file = os.path.join(model_dir, f"modelo_v{latest}.pkl")
+    metadata_file = os.path.join(model_dir, f"metadados_v{latest}.json")
+    
+    # Carrega o modelo do arquivo
+    with open(model_file, "rb") as f:
+        model = pickle.load(f)
+    
+    # Carrega os metadados do arquivo
+    with open(metadata_file, "r") as f:
+        metadata = json.load(f)
+    
+    # Retorna o modelo e seus metadados
+    return model, metadata
