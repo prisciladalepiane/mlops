@@ -53,3 +53,11 @@ O PySpark é a API do Apache Spark para Python, permitindo usar a funcionalidade
 - **Streaming**: Processar fluxos de dados em tempo real.
 
 O PySpark é especialmente útil porque combina a simplicidade e legibilidade da Linguagem Python com a escalabilidade do Spark, sendo uma escolha popular para projetos de Machine Learning que requerem a execução em ambiente distribuído, local ou na nuvem.
+
+# Uvicorn
+
+O Uvicorn é um servidor ASGI (Asynchronous Server Gateway Interface) de alto desempenho para aplicações Python. Ele é usado principalmente para executar aplicações web desenvolvidas com frameworks assíncronos como FastAPI, Starlette ou Django (quando configurado com suporte ASGI).
+
+Sua principal função é servir como um intermediário entre a aplicação web e os clientes que enviam requisições, gerenciando o envio e o recebimento de dados de forma eficiente. O Uvicorn se destaca por ser leve, rápido e totalmente compatível com operações assíncronas, o que é ideal para aplicações modernas que demandam alta escalabilidade.
+
+Além disso, ele suporta recursos como WebSockets, HTTP/2 e workers multiprocessos, sendo uma escolha popular para rodar APIs ou serviços web que requerem alta capacidade de processamento de requisições concorrentes. 
