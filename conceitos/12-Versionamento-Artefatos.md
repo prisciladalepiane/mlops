@@ -125,3 +125,17 @@ Cada feature é versionada com base em metadados, como o nome da feature, o temp
 O controle de versão também se estende ao pipeline de transformação de features. Ferramentas como **DVC (Data Version Control)** ou Git-LFS são comumente usadas para gerenciar os artefatos gerados durante o pré-processamento, enquanto frameworks como Feast possibilitam o versionamento e a gestão centralizada de features em ambientes de produção.
 
 Com essas práticas, o sistema MLOps pode garantir uma integração fluida entre a criação de features, o monitoramento de mudanças e a rastreabilidade, essencial para a governança e manutenção de modelos em ambientes de produção.
+
+# Versionamento e Rollback de Pipelines
+
+Versionamento e rollback de pipelines garantem maior confiabilidade e controle sobre o fluxo de desenvolvimento de modelos.
+
+Com o versionamento, cada alteração realizada na cadeia de tarefas que compõe o treinamento, desde a preparação dos dados até a implantação, recebe uma nova identificação, permitindo rastrear e comparar diferentes estados do pipeline ao longo do tempo.
+
+Isso torna possível reproduzir condições exatas de experimentos anteriores, assegurar a integridade dos resultados e facilitar a colaboração entre equipes, já que as modificações ficam documentadas em detalhe.
+
+O rollback, por sua vez, corresponde à capacidade de retornar a uma versão anterior do pipeline caso a mais recente introduza erros, diminuições inesperadas no desempenho ou incompatibilidades com outros componentes.
+
+Ao permitir a restauração rápida e segura de um estado estável, o rollback reduz riscos de interrupção no processo de treinamento e implantação, bem como os custos associados a correções urgentes.
+
+Dessa forma, o versionamento e o rollback, em conjunto, atuam como mecanismos de governança e segurança, garantindo a continuidade, consistência e confiabilidade das operações em Machine Learning.
