@@ -59,3 +59,16 @@ Aumento da latência: A comunicação entre containers pode introduzir uma peque
 **Consequências**:
 - Maior flexibilidade e robustez, mas potencialmente maior latência e maior uso de recursos.
 - Essencial se o projeto exigir escalabilidade, segurança e isolamento entre bancos de dados.
+
+### Cenário Crítico para o Projeto
+
+Para determinar o que é mais crítico no seu caso, você deve considerar:
+
+- Se o foco é desempenho e menor latência: Manter no mesmo container é melhor.
+- Se o foco é escalabilidade, isolamento e segurança: Separar em containers diferentes é a solução ideal.
+
+Por exemplo:
+- Se os bancos de dados forem independentes entre si e precisarem escalar de maneira distinta ou forem vulneráveis a interferência, a abordagem com containers separados é mais adequada.
+- Caso a aplicação tenha baixo risco de falhas, não exija escalabilidade individualizada ou precise de um tempo de resposta muito baixo, um mesmo container pode ser mais eficiente.
+
+> A decisão depende da criticidade de performance versus manutenção, escalabilidade e segurança no seu projeto. Normalmente para aplicações de Machine Learning isola-se o banco de dados em seu próprio container, uma vez que modelos de ML devemser frequentemente retreinados ou modificados, o que pode ser feito exclusivamente no container do modelo.
