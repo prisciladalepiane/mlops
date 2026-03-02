@@ -37,3 +37,31 @@ Gerenciamento Baseado em Versionamento: Possibilita a auditoria de alterações 
 Colaboração e Integração: Integra-se aos pipelines de CI/CD, promovendo o DevOps e o MLOps para colaboração entre equipes de desenvolvimento e operações.
 
 Em essência, o IaC transforma a infraestrutura em um ativo de software, permitindo que equipes de TI e desenvolvedores tratem servidores, redes e outros recursos como código, com todos os benefícios associados ao desenvolvimento de software moderno.
+
+## HCL
+
+A HCL (HashiCorp Configuration Language) é a linguagem declarativa usada para configurar recursos e infraestrutura em ferramentas da HashiCorp, como o Terraform. A HCL é projetada para ser simples, legível e expressiva, permitindo que usuários definam sua infraestrutura como código (IaC). 
+
+Abaixo estão os principais pontos sobre a HCL no contexto do Terraform.
+
+**Estrutura e Sintaxe**: A HCL é baseada em blocos e usa uma estrutura hierárquica para organizar configurações. Blocos geralmente começam com um tipo seguido por um nome e um corpo entre chaves {}, contendo atributos e configurações. 
+
+**Recursos**: Os recursos são elementos fundamentais no Terraform. Cada bloco de recurso especifica o tipo de recurso, um identificador e as propriedades necessárias.
+
+**Expressões e Variáveis**: A HCL suporta expressões para criar configurações dinâmicas. É possível usar variáveis, interpolação e funções para gerar valores. 
+
+**Módulos**: A HCL permite organizar a infraestrutura em módulos reutilizáveis, facilitando o gerenciamento e a escalabilidade de configurações.
+
+**Legibilidade**: A HCL foi projetada para ser legível tanto para humanos quanto para máquinas. Isso facilita a revisão de configurações e a automação.
+
+
+**Compatibilidade com JSON**: Embora a HCL seja a forma preferida para escrever configurações, o Terraform também suporta JSON para definir infraestrutura. Isso é útil em cenários onde ferramentas automatizadas geram configurações.
+
+
+A HCL é essencial para simplificar e automatizar o gerenciamento de infraestrutura em ambientes de nuvem, sendo uma das razões do sucesso do Terraform como ferramenta de IaC.
+
+## VPC
+
+Uma VPC (Virtual Private Cloud) é uma rede virtual isolada dentro da AWS onde você pode provisionar e gerenciar recursos, como instâncias EC2, bancos de dados e balanceadores de carga. Ela permite controlar endereços IP, sub-redes, tabelas de rotas, gateways de internet e outros aspectos de rede, proporcionando um ambiente seguro e personalizável.
+
+Um Security Group é um firewall virtual que controla o tráfego de entrada e saída de recursos dentro da VPC, como instâncias EC2. Ele funciona por meio de regras que especificam quais protocolos, portas e origens de tráfego são permitidos, aumentando a segurança e o controle sobre o acesso à sua infraestrutura.
