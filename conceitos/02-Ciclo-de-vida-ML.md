@@ -68,8 +68,6 @@ O modelo de ML gera valor para a empresa nas etapas finais do ciclo.
 
 ## Identificação e definição clara do problema a ser resolvido através de machine learning
 
-Identificação e Definição Clara do Problema a Ser Resolvido Através de Machine Learning
-
 A identificação e definição clara do problema a ser resolvido por meio de Machine Learning (ML) é um passo fundamental para o sucesso de qualquer projeto nessa área.
 
 Este processo ajuda a garantir que o esforço de desenvolvimento seja direcionado da maneira mais eficiente possível e que o resultado final seja útil e aplicável ao caso de uso pretendido.
