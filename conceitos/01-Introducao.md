@@ -6,15 +6,21 @@
 
 **DataOps** é uma abordagem ágil e automatizada para o design e a gestão de fluxos de dados, desde a coleta e preparação até o armazenamento e análise. DataOps busca melhorar a qualidade e a confiabilidade dos fluxos de dados, ao mesmo tempo que reduz o tempo do ciclo de análise de dados. Semelhante ao DevOps, o DataOps foca na colaboração entre equipes -neste caso, entre analistas de dados, engenheiros de dados e equipes de negócios -e na automação de processos relacionados aos dados.AIOps refere-se à aplicação de Machine Learning e Inteligência Artificial para operações de TI. A ideia é utilizar a análise automatizada para substituir operações manuais em tarefas de monitoramento, gerenciamento e análise de grandes volumes de dados operacionais. 
 
-**AIOps** pode ajudar as organizações a detectar e responder a incidentes mais rapidamente, prever problemas antes que ocorram e otimizar os recursos do sistema de forma mais eficaz.LLMOps é um campo emergente que se concentra no gerenciamento de todo o ciclo de vida de grandes modelos de linguagem, desde o gerenciamento de dados e desenvolvimento de modelos até a implantação e a ética. Este curso é dedicado ao MLOps, uma das atribuiçõesdo Engenheiro de Machine Learning.
+**AIOps** pode ajudar as organizações a detectar e responder a incidentes mais rapidamente, prever problemas antes que ocorram e otimizar os recursos do sistema de forma mais eficaz. 
+
+**LLMOps** é um campo emergente que se concentra no gerenciamento de todo o ciclo de vida de grandes modelos de linguagem, desde o gerenciamento de dados e desenvolvimento de modelos até a implantação e a ética. Este curso é dedicado ao MLOps, uma das atribuiçõesdo Engenheiro de Machine Learning.
 
 ## Desafios
 
-O MLOpsé uma combinação das palavras "Machine Learning" e "Operations", refere-se a um conjunto de práticas, métodos e ferramentas que unem o desenvolvimento de modelos de Machine Learning e as operações de TI para automatizar o ciclo de vida completo de desenvolvimento e implantação de modelos em produção. Este conceito é inspirado no DevOps, que busca a integração contínua e a entrega contínua no desenvolvimento de software.MLOps visa abordar os seguintes desafios e objetivos:
+O MLOps é uma combinação das palavras "Machine Learning" e "Operations", refere-se a um conjunto de práticas, métodos e ferramentas que unem o desenvolvimento de modelos de Machine Learning e as operações de TI para automatizar o ciclo de vida completo de desenvolvimento e implantação de modelos em produção. Este conceito é inspirado no DevOps, que busca a integração contínua e a entrega contínua no desenvolvimento de software.
+
+MLOps visa abordar os seguintes desafios e objetivos:
 
 - **Reprodutibilidade**: Garantir que os modelos possam ser treinados e re-treinados de maneira consistente, independentemente do ambiente.
 
-- **Automação**: Facilitar o treinamento automático, validação e implantação de modelos, permitindo atualizações rápidas e iterações.§Monitoramento:Acompanhar o desempenho dos modelos em produção, detectando e alertando sobre degradações ou comportamentos anômalos.
+- **Automação**: Facilitar o treinamento automático, validação e implantação de modelos, permitindo atualizações rápidas e iterações.
+
+- **Monitoramento**: Acompanhar o desempenho dos modelos em produção, detectando e alertando sobre degradações ou comportamentos anômalos.
 
 - **Escalabilidade**: Permitir que os modelos sejam treinados e servidos em infraestruturas que podem se adaptar a cargas variáveis.
 
@@ -41,31 +47,37 @@ O MLOpsé uma combinação das palavras "Machine Learning" e "Operations", refer
 Vamos elencar alguns dos principais aspectos que devem ser considerados e que estão altamente relacionados à ética e responsabilidade em Machine Learning:
 
 **Viés e Justiça**
+
 Um dos desafios mais notáveis em ML é a questão do viés algorítmico, onde os modelos de ML podem perpetuar ou até amplificar vieses existentes nos dados de treinamento.
 
 Isso pode levar a resultados discriminatórios ou injustos em áreas como contratação, concessão de crédito e aplicação da lei. Trabalhar para identificar, minimizar e corrigir esses vieses é uma prioridade ética.
 
 **Transparência e Explicabilidade**
+
 A natureza frequentemente "caixa-preta" dos modelos de ML, especialmente com técnicas de aprendizado profundo, pode dificultar a compreensão de como as decisões são feitas.
 
 Isso levanta preocupações sobre a transparência e a capacidade de explicar decisões automatizadas, especialmente em contextos críticos como diagnósticos médicos ou decisões judiciárias.
 
 **Privacidade e Segurança dos Dados**
+
 À medida que os algoritmos de ML exigem grandes volumes de dados para treinamento, questões de privacidade e segurança dos dados tornam-se prementes.
 
 É vital garantir que os dados sejam coletados, armazenados e usados de maneira ética, respeitando a privacidade dos indivíduos e protegendo-os contra vazamentos de dados ou uso indevido.
 
 **Responsabilidade e Prestação de Contas**
+
 Determinar a responsabilidade por decisões ou ações tomadas por sistemas baseados em ML pode ser desafiador, especialmente quando esses sistemas operam de maneira autônoma ou semi-autônoma.
 
 Estabelecer quadros de responsabilidade claros é fundamental para garantir que haja prestação de contas, especialmente em casos de erros ou danos.
 
 **Sustentabilidade**
+
 O treinamento de modelos de ML, especialmente modelos de aprendizado profundo, pode ser extremamente intensivo em termos de recursos computacionais e energia, levantando preocupações sobre a sustentabilidade ambiental.
 
 Desenvolver práticas mais eficientes em termos de energia é uma consideração ética importante.
 
 **Desenvolvimento Inclusivo**
+
 Garantir que as tecnologias de ML sejam desenvolvidas de maneira inclusiva, considerando uma ampla gama de perspectivas e experiências, pode ajudar a abordar muitas das preocupações éticas mencionadas.
 
 Isso inclui a diversificação das equipes de desenvolvimento e a inclusão de stakeholders em processos de design e implementação.
