@@ -15,19 +15,20 @@ O pré-processamento de dados é uma etapa essencial no ciclo de vida de um proj
 
 ### Transformação de Dados
 
-Normalização e Padronização: Ajuste das escalas dos dados para que todas as variáveis tenham uma contribuição equilibrada no modelo.
-Codificação de Variáveis Categóricas: Conversão de dados categóricos em um formato numérico, como one-hot encoding ou label encoding.
+**Normalização e Padronização:** Ajuste das escalas dos dados para que todas as variáveis tenham uma contribuição equilibrada no modelo.
+
+**Codificação de Variáveis Categóricas:** Conversão de dados categóricos em um formato numérico, como one-hot encoding ou label encoding.
 
 
 ### Engenharia de Características
 
-Criação de Novas Variáveis: Geração de novas características a partir das existentes que possam ser relevantes para o modelo.
-Extração de Características: Seleção de características mais relevantes para reduzir a dimensionalidade do conjunto de dados.
+**Criação de Novas Variáveis:** Geração de novas características a partir das existentes que possam ser relevantes para o modelo.
+
+**Extração de Características:** Seleção de características mais relevantes para reduzir a dimensionalidade do conjunto de dados.
 
 ### Redução de Dimensionalidade
 
 **Seleção de Variáveis**: Escolha das variáveis mais significativas para o modelo, removendo as irrelevantes.
-
 
 **Técnicas de Redução de Dimensionalidade**: Uso de métodos como PCA (Principal Component Analysis) para reduzir o número de variáveis mantendo a maior parte da variância dos dados.
 

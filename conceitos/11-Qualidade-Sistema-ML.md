@@ -44,7 +44,7 @@ Performance do Modelo: Métricas como acurácia, precisão, recall, F1-score par
 
 ### Ferramentas Comuns em MLOps
 
-Versionamento de Dados: DVC (Data Version Control), Delta Lake.
+**Versionamento de Dados**: DVC (Data Version Control), Delta Lake.
 
 **Orquestração de Pipelines**: Kubeflow, MLflow.
 

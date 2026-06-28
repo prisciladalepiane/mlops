@@ -6,35 +6,6 @@ Um modelo de maturidade em MLOps (Machine Learning Operations) é uma estrutura 
 
 Ele fornece um guia para implementar melhores práticas, automatizar workflows e garantir que os modelos de ML sejam gerenciados de maneira eficiente e escalável ao longo do ciclo de vida.
 
-## Principais Componentes de Um Modelo de Maturidade em MLOps
-
-Abaixo estão os principais componentes de um Modelo de Maturidade em MLOps, divididos nos níveis de maturidade.
-
-### Desenvolvimento e Experimentação
-
-- **Nível Básico**: Experimentos manuais com pouca ou nenhuma rastreabilidade.
-- **Nível Intermediário**: Uso de ferramentas de versionamento de código e dados, além de pipelines de experimentação semi-automatizados.
-- **Nível Avançado**: Pipelines de experimentação completamente automatizados e integrados com rastreamento de métricas e versionamento de modelos.
-
-### Implantação e Gerenciamento de Modelos
-
-- **Nível Básico**: Implantação manual de modelos com pouca automação.
-- **Nível Intermediário**: Uso de pipelines de CI/CD (Continuous Integration/Continuous Deployment) para automação parcial de implantações.
-- **Nível Avançado**: Implantação automatizada e contínua de modelos com rollback automático e testes em ambientes de produção.
-
-### Monitoramento e Manutenção
-
-- **Nível Básico:** Monitoramento manual e reativo.
-- **Nível Intermediário**: Monitoramento automatizado com alertas básicos.
-- **Nível Avançado**: Monitoramento proativo com análise preditiva e manutenção preditiva, incluindo feedback loops para ajustes automáticos dos modelos.
-
-### Governança e Compliance
-
-- **Nível Básico**: Documentação manual e controle mínimo.
-- **Nível Intermediário**: Políticas de governança implementadas, com documentação e auditorias periódicas.
-- **Nível Avançado**: Governança automatizada com conformidade contínua e auditorias automatizadas.
-
-> Ainda é muito raro encontrar empresas com nível avançado de maturidade em qualquer um desses componentes e boa parte das empresas está buscando meios (e profissionais capacitados) para passar do nível básico para o nível intermediário.
 
 ## Desenvolvimento e Experimentação
 
